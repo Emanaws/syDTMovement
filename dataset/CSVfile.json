@@ -1,0 +1,23 @@
+{
+	"name": "CSVfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sydb-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Raw/Processed",
+				"fileSystem": "dtmovements"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
